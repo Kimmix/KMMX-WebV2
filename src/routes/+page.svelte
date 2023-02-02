@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>KMMX</title>
+	<meta name="description" content="KMMX Protogen" />
 </svelte:head>
 
 <section>
