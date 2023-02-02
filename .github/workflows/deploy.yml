@@ -33,7 +33,6 @@ jobs:
           run_install: true
 
       - name: Build site
-        working-directory: '<root>' # if necessary, should contain {out}
         run: pnpm build
 
       - name: Upload to Deno Deploy
