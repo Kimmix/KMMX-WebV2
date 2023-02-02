@@ -39,5 +39,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "kmmx-web"
-          entrypoint: https://deno.land/std/http/file_server.ts
+          entrypoint: 'build/index.js'
           root: build
