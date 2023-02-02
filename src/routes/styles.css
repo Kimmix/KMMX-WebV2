@@ -1,97 +1,83 @@
+@import '@fontsource/montserrat';
+@import '@fontsource/open-sans';
 @import '@fontsource/fira-mono';
 
 :root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	/* --font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+	--font-body: "Montserrat", sans-serif;;
 	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
-	--color-theme-2: #4075a6;
+	--acc1-color: #f9826c;
+	--acc2-color: #ff446c;
+	--acc2b-color: #cb2040;
+	--white-color: #cedffc;
+	--white2-color: #adbfdd;
+	--black-color: #090711;
+	--black2-color: #110f1a;
+	--card-color: #0e0b16;
 	--color-text: rgba(0, 0, 0, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+	color: var(--white-color);
 	font-family: var(--font-body);
-	color: var(--color-text);
+	font-weight: 600;
+	-webkit-tap-highlight-color: #00000000;
+}
+
+::selection {
+	color: var(--acc2-color);
+	background-color: var(--white-color);
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	background-color: transparent;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::-webkit-input-placeholder {
+	color: var(--white2-color);
+	opacity: 0.65;
+}
+
+*::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: var(--white2-color);
+	opacity: 0.65;
+}
+
+*::placeholder {
+	/* modern browser */
+	color: var(--white2-color);
+	opacity: 0.65;
 }
 
 body {
+	overflow-anchor: none;
+	touch-action: manipulation;
+	scroll-behavior: smooth;
 	min-height: 100vh;
 	margin: 0;
-	background-attachment: fixed;
-	background-color: var(--color-bg-1);
-	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
+	background-color: var(--black2-color);
 }
 
-h1,
-h2,
-p {
-	font-weight: 400;
+h1 {
+	font-size: clamp(2.8rem, 10vw, 6.5em);
 }
 
-p {
-	line-height: 1.5;
+h2 {
+	font-size: clamp(2.2rem, 6vw, 4.5em);
 }
 
 a {
-	color: var(--color-theme-1);
+	color: var(--acc1-color);
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
-}
-
-h1 {
-	font-size: 2rem;
-	text-align: center;
-}
-
-h2 {
-	font-size: 1rem;
-}
-
-pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--color-text);
-}
-
-.text-column {
-	display: flex;
-	max-width: 48rem;
-	flex: 0.6;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
-}
-
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
-}
-
-button:focus:not(:focus-visible) {
-	outline: none;
-}
-
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
 }
 
 .visually-hidden {
@@ -104,4 +90,84 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+.bold {
+	font-weight: 600 !important;
+}
+
+.fade {
+	color: var(--white2-color) !important;
+	opacity: 0.4;
+}
+
+.outline {
+	font-family: 'Open Sans', sans-serif !important;
+	font-weight: 600 !important;
+	color: var(--black2-color) !important;
+	-webkit-text-stroke: 1.5px var(--white-color) !important;
+}
+
+.acc1 {
+	color: var(--acc1-color);
+}
+
+.acc2 {
+	color: var(--acc2-color);
+}
+
+.underline-hover {
+	transition: color 0.3s ease-in;
+}
+
+.underline-hover:hover {
+	color: var(--acc2-color);
+	text-decoration: underline;
+}
+
+.block-hover {
+	width: fit-content;
+	transition: color 0.3s ease-in;
+}
+
+.block-hover:hover {
+	background-color: var(--acc2-color);
+	color: var(--white1-color);
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.diagonal-stripes {
+	background: repeating-linear-gradient(135deg,
+			var(--black2-color),
+			var(--black2-color) 10px,
+			var(--acc2b-color) 10px,
+			var(--acc2b-color) 20px);
+}
+
+.diagonal-stripes-thin {
+	background: repeating-linear-gradient(135deg,
+			var(--white2-color),
+			var(--white2-color) 1px,
+			var(--black2-color) 2px,
+			var(--black2-color) 10px);
+}
+
+.diagonal-stripes-dot {
+	background: repeating-linear-gradient(135deg,
+			var(--white2-color),
+			var(--white2-color) 1px,
+			var(--black2-color) 2px,
+			var(--black2-color) 5px);
+}
+
+.diagonal-stripes-w {
+	background: repeating-linear-gradient(135deg,
+			var(--black2-color),
+			var(--black2-color) 10px,
+			var(--white-color) 10px,
+			var(--white-color) 20px);
 }
