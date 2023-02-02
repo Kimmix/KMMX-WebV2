@@ -5,5 +5,7 @@ import 'npm:svelte@^3.54.0'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()]
+  plugins: [
+    svelte()
+  ]
 })
