@@ -4,7 +4,7 @@
 
 <header>
 	<div class="corner">
-		<a href="#a">
+		<a href="#">
 			<img src={logo} alt="KMMX Logo" />
 		</a>
 	</div>
