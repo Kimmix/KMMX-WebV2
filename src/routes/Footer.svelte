@@ -95,6 +95,6 @@
     width: 100%;
     height: 30px;
     position: absolute;
-    left: -8px;
+    left: 0;
   }
 </style>

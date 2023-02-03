@@ -1,0 +1,367 @@
+<script>
+  import arc from "../../asset/svg/arc.svg";
+  import arc_m from "../../asset/svg/arc_m.svg";
+  import starmap from "../../asset/svg/starmap.svg";
+</script>
+
+<section id="cinematic" class="cinematic page">
+  <div class="redtab" />
+  <div class="wrapper">
+    <div class="zone1">
+      <div class="dot-container">
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+        <span class="dot" />
+      </div>
+      <div class="job-label">
+        <h1 class="outline">Adventurer</h1>
+        <h1 class="outline">Traveler</h1>
+        <h1>Researcher</h1>
+      </div>
+    </div>
+    <div class="line">
+      <picture>
+        <source media="(max-width: 800px)" srcset="{arc_m}" />
+        <img src="{arc}" alt="arc">
+      </picture>
+    </div>
+    <div class="zone2">
+      <div class="zone2-container">
+        <h1>Arcai</h1>
+        <h1 class="outline" style="margin-left: 100px;">Researcher</h1>
+      </div>
+      <h2 class="text-bg">Arcai</h2>
+    </div>
+    <div class="aencc">
+      <div class="redbar" />
+      <p>AENCC Active/.</p>
+      <div class="txtblock">
+        <div style="display: flex; gap: 6px;">
+          <div
+            style="height: 16px; width: 6px; background-color: var(--white-color); "
+          />
+          <div
+            style="display: flex; width: 100%; flex-direction: column; gap: 2px;"
+          >
+            <div
+              style="width: 100%; height: 5px; margin-top: 5px; margin-left: 10px; background-color: var(--white-color);"
+            />
+            <div
+              style="display: flex; width: 100%; justify-content: space-between; align-items: center;"
+            >
+              <div
+                style="width: 75%;height: 5px;background-color: var(--white2-color); opacity: 0.4;"
+              />
+              <div
+                style="width: 12%;height: 12px;background-color: var(--white-color);"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          style="width: 70%; height: 7px; align-self: end;  background-color: var(--white-color);"
+        />
+        <div
+          style="height: 4px; width: 80%; background-color: var(--white2-color); opacity: 0.7;"
+        />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357.44 313.09">
+          <path
+            d="M9.17 298.17 203.07 8.23 203.07 298.17 145.17 206.27 9.17 298.17z"
+          />
+          <path
+            d="M223.29 301.84 223.29 133.67 347.81 304.14 280.72 262.33 223.29 301.84z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="zone3">
+      <div class="zone3-container">
+        <div class="solarsys">
+          <img src="{starmap}" alt="starmap" />
+        </div>
+        <h2>Current Location: ???</h2>
+      </div>
+      <div class="note">
+        <p>*Lore will be avaliable in 3.0 update</p>
+      </div>
+    </div>
+  </div>
+  <div class="wipe">
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+</section>
+
+<style>
+  .redtab {
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    background-color: var(--acc2b-color);
+    top: 5%;
+    right: 0;
+    z-index: 3;
+  }
+
+  section.cinematic {
+    min-height: 85vh;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  section.cinematic > .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  section.cinematic > .wrapper > .zone1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .cinematic .job-label {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-right: 5%;
+    gap: 20px;
+  }
+
+  section.cinematic > .wrapper > .zone2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .zone2 .zone2-container {
+    margin-right: 19%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .cinematic .text-bg {
+    font-size: clamp(4.2rem, 40vw, 30em);
+    z-index: 0;
+    opacity: 0.03;
+    font-weight: 500;
+    position: relative;
+    /* top: 770px; */
+    right: -10%;
+  }
+
+  .cinematic .dot-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: space-between;
+  }
+
+  .cinematic .dot {
+    z-index: 1;
+    height: 10px;
+    width: 10px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .cinematic .dot:hover {
+    background-color: var(--acc2-color);
+  }
+
+  .cinematic .line {
+    position: relative;
+    top: 12%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 2200px;
+    z-index: 2;
+  }
+
+  .cinematic .aencc {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    z-index: 2;
+  }
+
+  .cinematic .aencc > .txtblock {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    gap: 4px;
+  }
+
+  .cinematic .aencc svg {
+    align-self: flex-end;
+    width: 30px;
+    height: auto;
+    stroke-width: 4px;
+    fill: none;
+    stroke: var(--white-color);
+    animation: stroke-width 4s infinite ease-in;
+  }
+
+  @keyframes stroke-width {
+    0% {
+      stroke-width: 4px;
+    }
+
+    30% {
+      stroke-width: 14px;
+    }
+
+    60% {
+      stroke-width: 14px;
+    }
+
+    100% {
+      stroke-width: 4px;
+    }
+  }
+
+  /* .cinematic .aencc>.txtblock div {
+  background-color: var(--white-color);
+} */
+
+  .cinematic .aencc .redbar {
+    width: 37px;
+    height: 7px;
+    background-color: var(--acc2b-color);
+  }
+
+  section.cinematic > .wrapper > .zone3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding-bottom: 200px;
+  }
+
+  .cinematic .zone3 .zone3-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .cinematic .zone3 .solarsys {
+    padding-right: 36%;
+    width: 100%;
+  }
+
+  .cinematic .zone3 .solarsys > img {
+    position: relative;
+    left: -20%;
+  }
+
+  .cinematic .zone3 h2 {
+    position: absolute;
+    padding-top: 17%;
+    padding-left: 12%;
+  }
+
+  .cinematic .zone3 .note {
+    width: 100%;
+    text-align: end;
+    margin-right: 35px;
+  }
+
+  .wipe {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wipe > div {
+    width: 100%;
+    height: 25%;
+    margin: -5px 0;
+    background: var(--acc2b-color);
+  }
+
+  @media screen and (max-width: 800px) {
+    .zone2 .zone2-container {
+      margin-right: 0;
+    }
+
+    .cinematic .line {
+      top: 16%;
+    }
+
+    .cinematic .aencc {
+      margin-top: 50vw;
+    }
+
+    .cinematic .zone3 .solarsys {
+      padding-right: 0;
+    }
+  }
+</style>
